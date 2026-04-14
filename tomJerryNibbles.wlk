@@ -10,6 +10,12 @@ object tom {
     method velocidad() {
         return 5 + energia / 10
     }
+    method energia() {
+      return energia
+    }
+    method estaFeliz() {
+      return energia > 50
+    }
 
 }
 
