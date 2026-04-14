@@ -36,6 +36,15 @@ describe "test del escenario de tom y jerry y nibbles" {
     tom.comer(jerry)
     assert.equals(25.9, tom.velocidad())
   }
+  test "si corre 38 metros su velocidad pasa a ser 24" {
+    tom.comer(jerry)
+    tom.correr(24)
+    tom.comer(nibbles)
+    jerry.cumplirAños()
+    tom.comer(jerry)
+    tom.correr(38)
+    assert.equals(24, tom.velocidad())
+  }
 
   test "Tom al inicio no esta feliz" {
     assert.notThat(tom.estaFeliz())
